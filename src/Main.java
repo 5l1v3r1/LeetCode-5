@@ -1,9 +1,10 @@
 import solutions.easy.No117;
+import solutions.easy.No169;
 
 public class Main {
 
     public static void main(String[] args) {
-        No117 no117 = new No117();
-        System.out.println(no117.titleToNumber("AB"));
+        int[] x = {2, 2, 1, 1, 1, 2, 2};
+        System.out.println(new No169().majorityElement(x));
     }
 }
