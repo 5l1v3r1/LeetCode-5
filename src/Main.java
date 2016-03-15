@@ -4,13 +4,17 @@ import util.*;
 public class Main {
 
     public static void main(String[] args) {
-//        new No172().trailingZeroes(1000);
 
-//        System.out.println(new No009().isPalindrome(13532));
+//        int[] list = new int[]{-1, -1};
+//        int[] list2 = new int[]{2, 4, 6, 8, 10};
+
+//        new No088().merge(list1, 5, list2, 5);
+//        System.out.println(list1);
+
+        System.out.println(new No233().computeArea(-2, -2, 2, 2, -1, -1, 1, 1));
 
 //        TreeNode node = new TreeNode(1);
 //        new No107().levelOrderBottom(node);
 
-        System.out.println(new No190().reverseBits(2));
     }
 }
