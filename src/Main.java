@@ -11,7 +11,7 @@ public class Main {
 //        new No088().merge(list1, 5, list2, 5);
 //        System.out.println(list1);
 
-        System.out.println(new No233().computeArea(-2, -2, 2, 2, -1, -1, 1, 1));
+        System.out.println(new No290().wordPattern("abba", "dog cat cat dog"));
 
 //        TreeNode node = new TreeNode(1);
 //        new No107().levelOrderBottom(node);
