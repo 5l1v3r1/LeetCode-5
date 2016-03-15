@@ -1,5 +1,5 @@
 import solutions.easy.*;
-import util.TreeNode;
+import util.*;
 
 public class Main {
 
@@ -11,10 +11,6 @@ public class Main {
 //        TreeNode node = new TreeNode(1);
 //        new No107().levelOrderBottom(node);
 
-        char[][] chars = new char[][]{".87654321".toCharArray(),"2........".toCharArray()
-                ,"3........".toCharArray(),"4........".toCharArray(),"5........".toCharArray()
-                ,"6........".toCharArray(),"7........".toCharArray(),"8........".toCharArray()
-                ,"9........".toCharArray()};
-        System.out.println(new No036().isValidSudoku(chars));
+        System.out.println(new No190().reverseBits(2));
     }
 }
