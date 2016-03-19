@@ -4,10 +4,16 @@ package solutions.easy;
  * Created by dss886 on 2016/3/18.
  * https://leetcode.com/problems/rotate-array/
  *
- * Ideas to solve:
+ * My ideas to solve:
  * 1. Loop k times, each loop rotate 1 step. [O(n*k), O(1)]
  * 2. Create a new array, copy and rotate at the same time. [O(n), O(n)]
  * 3. Linked-swap the item. [O(n), O(1)]
+ *
+ * The solution below using the 3rd idea but exceeded the time limit,
+ * because the operation '%' cost a lot of time when both of the array's length and k are very big.
+ *
+ * See amazing solution just using three array reverse at:
+ * https://leetcode.com/discuss/36477/easy-to-read-java-solution
  */
 public class No189 {
     public void rotate(int[] nums, int k) {
