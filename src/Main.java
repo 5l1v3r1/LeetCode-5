@@ -1,5 +1,6 @@
 import algorithm.sort.MergeSort;
 import algorithm.sort.ShellSort;
+import others.BigIntegerMultiplication;
 import solutions.medium.*;
 
 import java.util.Arrays;
@@ -13,7 +14,7 @@ public class Main {
 //        System.out.println(Arrays.toString(list));
 //        new MergeSort().sort(list);
 //        System.out.println(Arrays.toString(list));
-        System.out.println(new No137().singleNumber(list));
+        System.out.println(new BigIntegerMultiplication().multiple("1212231431", "12133465345623123"));
 //        PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
     }
 }
