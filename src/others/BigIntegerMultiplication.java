@@ -2,7 +2,7 @@ package others;
 
 /**
  * Created by dss886 on 2016/3/28.
- * From the online written test of Tencent.
+ * From the simulate online written test of Tencent 2016/03/22.
  */
 public class BigIntegerMultiplication {
     public String multiple(String a, String b) {

@@ -1,9 +1,11 @@
 import algorithm.sort.MergeSort;
 import algorithm.sort.ShellSort;
 import others.BigIntegerMultiplication;
+import others.NumericKeypad;
 import solutions.medium.*;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
 
