@@ -17,7 +17,7 @@ public class Main {
 //        new MergeSort().sort(list);
 //        System.out.println(Arrays.toString(list));
 //        System.out.println(new BigIntegerMultiplication().multiple("1212231431", "12133465345623123"));
-        System.out.println(new No012().intToRoman(9));
+        System.out.println(new No096().numTrees(3));
 //        PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
     }
 }
