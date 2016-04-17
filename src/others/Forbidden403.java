@@ -1,6 +1,11 @@
+package others;
+
 import java.util.Scanner;
 
-public class Main {
+/**
+ * Created by dss886 on 2016/4/6.
+ */
+public class Forbidden403 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int N = scanner.nextInt();
@@ -15,7 +20,7 @@ public class Main {
         }
         M:
         for (int i = 0; i < M; i++) {
-            int ip = parseIP(scanner.next());
+            String ip = parseIP(scanner.next());
             for (Rule rule : rules) {
                 if (matchIP(rule, ip)) {
                     System.out.println(rule.isAllow ? "YES" : "NO");
@@ -26,26 +31,27 @@ public class Main {
         }
     }
 
-    private static boolean matchIP(Rule rule, int ip) {
-        if (rule.mask == 0) return true;
-        int ipAndMask = ip >>> (32 - rule.mask);
-        int ruleAndMask = rule.ip >>> (32 - rule.mask);
-        return ipAndMask == ruleAndMask;
+    private static boolean matchIP(Rule rule, String ip) {
+        for (int i = 0; i < rule.mask; i++) {
+            if (ip.charAt(i) != rule.ip.charAt(i)) return false;
+        }
+        return true;
     }
 
-    private static int parseIP(String ipString) {
-        String[] ips = ipString.split("\\.");
-        int ip = 0;
+    private static String parseIP(String ip) {
+        String[] ips = ip.split("\\.");
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < 4; i++) {
-            ip = ip << 8;
-            ip += Integer.parseInt(ips[i]);
+            String quart = Integer.toBinaryString(Integer.parseInt(ips[i]));
+            for (int j = 0; j < 8 - quart.length(); j++) sb.append("0");
+            sb.append(quart);
         }
-        return ip;
+        return sb.toString();
     }
 
     private static class Rule {
         public boolean isAllow;
-        public int ip;
+        public String ip;
         public int mask;
     }
 }
