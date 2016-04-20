@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /**
  * Created by dss886 on 2016/4/6.
+ * From the online written test of Microsoft 2016.
  */
 public class DemoDay {
     public static void main(String[] args) {
