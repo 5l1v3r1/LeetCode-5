@@ -5,25 +5,39 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int N = scanner.nextInt();
         int M = scanner.nextInt();
-        Rule[] rules = new Rule[N];
+//        Rule[] rules = new Rule[N];
+//        for (int i = 0; i < N; i++) {
+//            rules[i] = new Rule();
+//            rules[i].isAllow = scanner.next().equals("allow");
+//            String[] ipAndMask = scanner.next().split("/");
+//            rules[i].ip = parseIP(ipAndMask[0]);
+//            rules[i].mask = ipAndMask.length > 1 ? Integer.parseInt(ipAndMask[1]) : 32;
+//        }
+//        M:
+//        for (int i = 0; i < M; i++) {
+//            int ip = parseIP(scanner.next());
+//            for (Rule rule : rules) {
+//                if (matchIP(rule, ip)) {
+//                    System.out.println(rule.isAllow ? "YES" : "NO");
+//                    continue M;
+//                }
+//            }
+//            System.out.println("YES");
+//        }
+        TrieNode root = null;
         for (int i = 0; i < N; i++) {
-            rules[i] = new Rule();
-            rules[i].isAllow = scanner.next().equals("allow");
+            Rule rule = new Rule();
+            rule.isAllow = scanner.next().equals("allow");
             String[] ipAndMask = scanner.next().split("/");
-            rules[i].ip = parseIP(ipAndMask[0]);
-            rules[i].mask = ipAndMask.length > 1 ? Integer.parseInt(ipAndMask[1]) : 32;
+            rule.ip = parseIP(ipAndMask[0]);
+            rule.mask = ipAndMask.length > 1 ? Integer.parseInt(ipAndMask[1]) : 32;
+            insertRule(root, rule);
         }
-        M:
-        for (int i = 0; i < M; i++) {
-            int ip = parseIP(scanner.next());
-            for (Rule rule : rules) {
-                if (matchIP(rule, ip)) {
-                    System.out.println(rule.isAllow ? "YES" : "NO");
-                    continue M;
-                }
-            }
-            System.out.println("YES");
-        }
+
+    }
+
+    private static void insertRule(TrieNode root, Rule rule) {
+
     }
 
     private static boolean matchIP(Rule rule, int ip) {
@@ -47,5 +61,15 @@ public class Main {
         public boolean isAllow;
         public int ip;
         public int mask;
+    }
+
+    private class TrieNode {
+        public int allow;
+        public int val;
+
+        public TrieNode(int allow, int val) {
+            this.allow = allow;
+            this.val = val;
+        }
     }
 }
