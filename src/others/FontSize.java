@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Created by dss886 on 2016/4/6.
  * From the online written test of Microsoft 2016.
  *
- * Got 90/100, mistakenly using Math.round() rather than Math.ceil().
+ * When testing I got 90/100, mistakenly using Math.round() rather than Math.ceil().
  */
 public class FontSize {
     public static void main(String[] args) {

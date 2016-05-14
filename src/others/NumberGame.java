@@ -7,6 +7,7 @@ import java.util.Scanner;
  * From the online written test of 360 Inc. 2016/03/29.
  *
  * Notice: This solution only pass 60% test cases.
+ * Could not find the origin question...
  */
 public class NumberGame {
     public static void main(String[] args) {
