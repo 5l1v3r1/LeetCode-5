@@ -1,4 +1,4 @@
-package others;
+package company.microsoft;
 
 import java.util.Scanner;
 

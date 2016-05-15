@@ -1,4 +1,4 @@
-package others;
+package company.others;
 
 /**
  * Created by dss886 on 2016/3/28.
