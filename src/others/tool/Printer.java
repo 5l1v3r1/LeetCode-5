@@ -5,7 +5,11 @@ import others.stucture.ListNode;
 /**
  * Created by dss886 on 2016/5/15.
  */
-public class Print {
+public class Printer {
+    public static void p(int content) {
+        System.out.println(content);
+    }
+
     public static void p(String content) {
         System.out.println(content);
     }

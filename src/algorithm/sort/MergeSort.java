@@ -4,7 +4,7 @@ package algorithm.sort;
  * Created by dss886 on 2016/3/22.
  * https://zh.wikipedia.org/wiki/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F
  *
- * Time Complexity:  Best O(n), Worst O(n*log(n)), Average O(n*log(n))
+ * Timer Complexity:  Best O(n), Worst O(n*log(n)), Average O(n*log(n))
  * Space Complexity: O(n)
  * Stable: Yes
  */

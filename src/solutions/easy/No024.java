@@ -1,7 +1,6 @@
 package solutions.easy;
 
 import others.stucture.ListNode;
-import others.tool.Time;
 
 /**
  * Created by dss886 on 2016/5/15.

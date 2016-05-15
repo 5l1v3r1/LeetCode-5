@@ -1,13 +1,15 @@
 import others.stucture.ListNode;
-import others.tool.ListBuilder;
-import others.tool.Print;
-import solutions.easy.*;
+import others.stucture.TreeNode;
+import others.tool.Parser;
+import others.tool.Printer;
+import solutions.medium.*;
 
 public class Main {
 
     public static void main(String[] args) {
-        ListNode list = ListBuilder.get(new int[]{1, 2, 3, 4});
-        Print.p(new No024().swapPairs(list));
+        ListNode head = Parser.list("[1, 2, 3, 4]");
+        TreeNode root = Parser.tree("[1, 2, 3, 4, #, 5, #, 6, #, #, #, 7]");
+        Printer.p(new No343().integerBreak(8));
     }
 
 }

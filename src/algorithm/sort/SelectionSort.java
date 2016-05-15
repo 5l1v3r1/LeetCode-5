@@ -4,7 +4,7 @@ package algorithm.sort;
  * Created by dss886 on 2016/3/21.
  * https://zh.wikipedia.org/wiki/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F
  *
- * Time Complexity:  O(n^2)
+ * Timer Complexity:  O(n^2)
  * Space Complexity: O(1)
  * Stable: No
  */
