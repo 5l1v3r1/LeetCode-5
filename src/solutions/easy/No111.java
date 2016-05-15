@@ -1,6 +1,6 @@
 package solutions.easy;
 
-import util.TreeNode;
+import others.stucture.TreeNode;
 
 /**
  * Created by dss886 on 2016/3/14.

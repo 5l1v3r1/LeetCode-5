@@ -1,6 +1,6 @@
 package solutions.easy;
 
-import util.TreeNode;
+import others.stucture.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

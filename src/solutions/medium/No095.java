@@ -1,6 +1,6 @@
 package solutions.medium;
 
-import util.TreeNode;
+import others.stucture.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

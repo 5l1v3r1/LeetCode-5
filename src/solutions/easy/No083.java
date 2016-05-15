@@ -1,6 +1,6 @@
 package solutions.easy;
 
-import util.ListNode;
+import others.stucture.ListNode;
 
 /**
  * Created by dss886 on 2016/3/9.

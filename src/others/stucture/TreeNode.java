@@ -1,4 +1,4 @@
-package util;
+package others.stucture;
 
 /**
  * Created by dss886 on 2016/3/5.
