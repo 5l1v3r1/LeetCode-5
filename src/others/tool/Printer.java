@@ -4,6 +4,7 @@ import others.stucture.ListNode;
 import others.stucture.TreeNode;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by dss886 on 2016/5/15.
@@ -15,6 +16,16 @@ public class Printer {
 
     public static void p(String content) {
         System.out.println(content);
+    }
+
+    public static void p(List<String> content) {
+        StringBuilder sb = new StringBuilder("[");
+        for (String s : content) {
+            sb.append("\"").append(s).append("\", ");
+        }
+        int l = sb.length();
+        if (l > 1) sb.delete(l - 2, l);
+        System.out.println(sb.append("]"));
     }
 
     public static void p(ListNode node) {
@@ -29,24 +40,5 @@ public class Printer {
             }
         }
         System.out.println(sb.toString());
-    }
-
-    public static void p(TreeNode node) {
-        if (node == null) {
-            System.out.println("null");
-            return;
-        }
-        int maxLevel = countTreeLevel(node);
-        ArrayList<String> list = new ArrayList<>((int)Math.pow(2, maxLevel) - 1);
-        addTree(node, list, 0, maxLevel);
-    }
-
-    private static void addTree(TreeNode node, ArrayList<String> list, int index, int maxLevel) {
-        list.set(index, String.valueOf(node.val));
-    }
-
-    private static int countTreeLevel(TreeNode node) {
-        if (node == null) return 0;
-        return Math.max(countTreeLevel(node.left), countTreeLevel(node.right)) + 1;
     }
 }
