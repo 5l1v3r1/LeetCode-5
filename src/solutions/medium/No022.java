@@ -6,36 +6,24 @@ import java.util.List;
 /**
  * Created by dss886 on 2016/5/16.
  * https://leetcode.com/problems/generate-parentheses/
+ *
+ * This problem is not solved, the solution below is:
+ * https://leetcode.com/discuss/14436/concise-recursive-c-solution
  */
 public class No022 {
 
-    private List<List<String>> map = new ArrayList<>();
-
     public List<String> generateParenthesis(int n) {
-        // todo this solution is wrong.
-        if (n == 0) return new ArrayList<>();
-        for (int i = 0; i < n; i++) {
-            if (map.size() > i) continue;
-            List<String> list = new ArrayList<>();
-            list.add(getDeepestParenthesis(i + 1));
-            List<String> lastList = (i - 1 < 0) ? new ArrayList<>() : map.get(i - 1);
-            for (String lastString : lastList) {
-                list.add("(" + lastString + ")");
-                list.add("()" + lastString);
-            }
-            map.add(list);
-        }
-        return map.get(map.size() - 1);
+        List<String> list = new ArrayList<>();
+        addString(list, "", n, 0);
+        return list;
     }
 
-    private String getDeepestParenthesis(int num) {
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < num; i++) {
-            sb.append("(");
+    private void addString(List<String> list, String current, int left, int right) {
+        if (left == 0 && right == 0) {
+            list.add(current);
+            return;
         }
-        for (int i = 0; i < num; i++) {
-            sb.append(")");
-        }
-        return sb.toString();
+        if (left > 0) addString(list, current + "(", left - 1, right + 1);
+        if (right > 0) addString(list, current + ")", left, right - 1);
     }
 }
