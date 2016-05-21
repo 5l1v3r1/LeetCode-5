@@ -18,9 +18,9 @@ public class Printer {
         System.out.println(content);
     }
 
-    public static void p(List<String> content) {
+    public static void p(List content) {
         StringBuilder sb = new StringBuilder("[");
-        for (String s : content) {
+        for (Object s : content) {
             sb.append("\"").append(s).append("\", ");
         }
         int l = sb.length();
