@@ -1,4 +1,4 @@
-package solutions.medium;
+package solutions.easy;
 
 /**
  * Created by dss886 on 2016/3/28.
