@@ -11,35 +11,28 @@ import java.util.List;
  */
 public class No095 {
     public List<TreeNode> generateTrees(int n) {
-        List<TreeNode> list = new ArrayList<>();
-        int[] nums = new int[n];
-        for (int i = 0; i < n; i++) nums[i] = i + 1;
-        // TODO: 2016/4/3
-        return list;
+        if (n == 0) return new ArrayList<>();
+        return buildRecursive(1, n);
     }
 
-    public TreeNode buildBST(int[] values) {
-        TreeNode root = new TreeNode(values[0]);
-        for (int i = 1; i < values.length; i++) {
-            TreeNode p = root;
-            while (true) {
-                if (values[i] < p.val) {
-                    if (p.left == null) {
-                        p.left = new TreeNode(values[i]);
-                        break;
-                    } else {
-                        p = p.left;
-                    }
-                } else {
-                    if (p.right == null) {
-                        p.right = new TreeNode(values[i]);
-                        break;
-                    } else {
-                        p = p.right;
-                    }
+    private List<TreeNode> buildRecursive(int start, int end) {
+        List<TreeNode> list = new ArrayList<>();
+        if (start > end) {
+            list.add(0, null);
+            return list;
+        }
+        for (int i = start; i <= end; i++) {
+            List<TreeNode> leftList = buildRecursive(start, i - 1);
+            List<TreeNode> rightList = buildRecursive(i + 1, end);
+            for (TreeNode left : leftList) {
+                for (TreeNode right : rightList) {
+                    TreeNode node = new TreeNode(i);
+                    node.left = left;
+                    node.right = right;
+                    list.add(node);
                 }
             }
         }
-        return root;
+        return list;
     }
 }
