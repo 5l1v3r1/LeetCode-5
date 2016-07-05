@@ -8,6 +8,9 @@ import java.util.List;
 /**
  * Created by dss886 on 2016/4/2.
  * https://leetcode.com/problems/unique-binary-search-trees-ii/
+ *
+ * DP (similar thought of No.096) is also work by using clone and offset:
+ * https://discuss.leetcode.com/topic/2940/java-solution-with-dp
  */
 public class No095 {
     public List<TreeNode> generateTrees(int n) {
