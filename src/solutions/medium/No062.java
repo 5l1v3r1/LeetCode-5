@@ -7,10 +7,13 @@ package solutions.medium;
 public class No062 {
     public int uniquePaths(int m, int n) {
         if (m == 1 || n == 1) return 1;
-        return combinatorics(m + n - 2, n - 1);
+        return combinations(m + n - 2, n - 1);
     }
 
-    private int combinatorics(int n, int k) {
+    /**
+     * 求组合数 C(n, k)
+     */
+    private int combinations(int n, int k) {
         double result = 1;
         for (int i = 0; i < k; i++) {
             result *= (n - i);
