@@ -12,7 +12,7 @@ import java.util.Scanner;
  * Created by dss886 on 16/7/6.
  *
  * From the Round-Test APAC Test of Google 2017 (Problem B)
- * https://code.google.com/codejam/contest/5254486/dashboard
+ * https://code.google.com/codejam/contest/5254486/dashboard#s=p1
  *
  * Find the possibilities of a ^ b ^ c ^ d = K, the instant thought of this problem is using 4-nested loop.
  * But when N is very big, the time cost of the deep-nested loop will be very terrible.

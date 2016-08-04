@@ -1,3 +1,5 @@
+import company.google.SumsOfSums;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -6,7 +8,7 @@ public class Main {
 //        TreeNode node = new No108().sortedArrayToBST(new int[]{1, 2});
 //        TreeNode node = new No108().sortedArrayToBST(new int[]{1, 2});
 //        Printer.p(new No241().diffWaysToCompute("1+1*2+4"));
-//        RobotRockBand.main(args);
+        SumsOfSums.main(args);
     }
 
 }
