@@ -1,5 +1,5 @@
 import others.tool.Printer;
-import solutions.medium.No309;
+import leetcode.medium.No309;
 
 public class Main {
 
