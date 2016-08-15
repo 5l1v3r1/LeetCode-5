@@ -1,5 +1,5 @@
 import others.tool.Printer;
-import solutions.medium.No264;
+import solutions.medium.No309;
 
 public class Main {
 
@@ -8,8 +8,8 @@ public class Main {
 //        TreeNode root = Parser.tree("[2, 1, 3, #, 4]");
 //        TreeNode node = new No108().sortedArrayToBST(new int[]{1, 2});
 //        TreeNode node = new No108().sortedArrayToBST(new int[]{1, 2});
-        Printer.p(new No264().nthUglyNumber(10));
 //        SumsOfSums.main(args);
+        Printer.p(new No309().maxProfit(new int[]{1, 2, 3, 0, 2}));
     }
 
 }
