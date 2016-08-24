@@ -1,4 +1,4 @@
-import leetcode.medium.No279;
+import leetcode.medium.No375;
 import others.tool.Printer;
 
 public class Main {
@@ -9,7 +9,7 @@ public class Main {
 //        TreeNode node = new No108().sortedArrayToBST(new int[]{1, 2});
 //        TreeNode node = new No108().sortedArrayToBST(new int[]{1, 2});
 //        SumsOfSums.main(args);
-        Printer.p(new No279().numSquares(70));
+        Printer.p(new No375().getMoneyAmount(3));
     }
 
 }
