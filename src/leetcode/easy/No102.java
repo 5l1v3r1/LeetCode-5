@@ -1,6 +1,6 @@
 package leetcode.easy;
 
-import others.stucture.TreeNode;
+import others.structure.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

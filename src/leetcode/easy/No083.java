@@ -1,6 +1,6 @@
 package leetcode.easy;
 
-import others.stucture.ListNode;
+import others.structure.ListNode;
 
 /**
  * Created by dss886 on 2016/3/9.

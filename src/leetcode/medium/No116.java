@@ -1,6 +1,6 @@
 package leetcode.medium;
 
-import others.stucture.TreeLinkNode;
+import others.structure.TreeLinkNode;
 
 import java.util.HashMap;
 import java.util.Map;

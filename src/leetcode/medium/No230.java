@@ -1,6 +1,6 @@
 package leetcode.medium;
 
-import others.stucture.TreeNode;
+import others.structure.TreeNode;
 
 /**
  * Created by dss886 on 2016/5/15.

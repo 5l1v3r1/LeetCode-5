@@ -1,9 +1,7 @@
 package others.tool;
 
-import others.stucture.ListNode;
-import others.stucture.TreeNode;
+import others.structure.ListNode;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**

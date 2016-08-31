@@ -1,4 +1,4 @@
-package others.stucture;
+package others.structure;
 
 /**
  * Created by dss886 on 2016/3/5.
