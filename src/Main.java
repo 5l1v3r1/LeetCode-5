@@ -1,4 +1,4 @@
-import leetcode.medium.No152;
+import leetcode.medium.No322;
 import others.tool.Printer;
 
 public class Main {
@@ -9,7 +9,6 @@ public class Main {
 //        TreeNode node = new No108().sortedArrayToBST(new int[]{1, 2});
 //        TreeNode node = new No108().sortedArrayToBST(new int[]{1, 2});
 //        SumsOfSums.main(args);
-        Printer.p(new No152().maxProduct(new int[]{2, 3, -2, 4}));
+        Printer.p(new No322().coinChange(new int[]{470, 35, 120, 81, 121}, 9825));
     }
-
 }
