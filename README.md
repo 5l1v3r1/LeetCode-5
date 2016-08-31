@@ -1,5 +1,5 @@
 # LeetCode
-My Solutions of LeetCode Problems
+My Solutions of LeetCode Problems and Some OJ Problems
 
 ### Directory Stucture
 
