@@ -20,4 +20,17 @@ public class No198 {
         }
         return sum[nums.length - 1];
     }
+
+    private int robWithConstantSpace(int[] nums) {
+        if(nums.length == 0) return 0;
+        if(nums.length == 1) return nums[0];
+        int max2 = nums[0];                         // max at house (n-2)
+        int max1 = Math.max(nums[0], nums[1]);      // max at house (n-1)
+        for (int i = 2; i < nums.length; i++) {
+            int nowMax = Math.max(max2 + nums[i], max1);
+            max2 = max1;
+            max1 = nowMax;
+        }
+        return max1;
+    }
 }

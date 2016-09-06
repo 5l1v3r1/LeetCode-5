@@ -28,4 +28,20 @@ public class No063 {
         }
         return pathNumMap[x][y];
     }
+
+    private int dpLoop(int[][] map) {
+        if (map == null || map.length == 0) return 0;
+        int width = map[0].length;
+        int[] dp = new int[width];
+        for (int[] row : map) {
+            for (int j = 0; j < width; j++) {
+                if (row[j] == 1) {
+                    dp[j] = 0;
+                } else if (j > 0) {
+                    dp[j] += dp[j - 1];
+                }
+            }
+        }
+        return dp[width - 1];
+    }
 }
