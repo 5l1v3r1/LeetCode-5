@@ -65,7 +65,8 @@ General DP problem with two parameters.
 
 ##### [No095(Unique Binary Search Trees II)](https://leetcode.com/problems/unique-binary-search-trees-ii/)
 
+Similar with No096.
 
+##### [No096(Unique Binary Search Trees)](https://leetcode.com/problems/unique-binary-search-trees/)
 
-##### [No095(Unique Binary Search Trees)](https://leetcode.com/problems/unique-binary-search-trees/)
-
+DP related all state before.
