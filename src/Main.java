@@ -1,3 +1,6 @@
+import company.microsoft.Composition;
+import company.microsoft.RegistrationDay;
+import company.microsoft.ShorteningSequence;
 import company.others.CatchTrain;
 import leetcode.medium.No322;
 import others.tool.Printer;
@@ -11,7 +14,7 @@ public class Main {
 //        TreeNode node = new No108().sortedArrayToBST(new int[]{1, 2});
 //        SumsOfSums.main(args);
 //        Printer.p(new No322().coinChange(new int[]{470, 35, 120, 81, 121}, 9825));
-        CatchTrain.main(args);
+        RegistrationDay.main(args);
     }
 
 }
